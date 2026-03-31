@@ -1,36 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>kiran  Store</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<h1>kiran</h1>
+<!-- Navbar -->
+<header>
+    <h1>Amazon Clone</h1>
+    <input type="text" placeholder="Search products...">
+    <button>Search</button>
+</header>
 
-<div class="products">
+<!-- Products -->
+<section class="products">
 
-<div class="product">
-<img src="https://share.google/CqsgFRucywsEPGLpG">
-<h2>books</h2>
-<p>®20</p>
-<button onclick="addToCart('books',20)">Add to Cart</button>
-</div>
+    <div class="card">
+        <img src="https://via.placeholder.com/150">
+        <h3>Smartphone</h3>
+        <p>₹15,000</p>
+        <button onclick="addToCart('Smartphone')">Add to Cart</button>
+    </div>
 
-<div class="product">
-<img src="https://share.google/CqsgFRucywsEPGLpG/150">
-<h2>Shoes</h2>
-<p>®50</p>
-<button onclick="addToCart('Shoes',50)">Add to Cart</button>
-</div>
+    <div class="card">
+        <img src="https://via.placeholder.com/150">
+        <h3>Laptop</h3>
+        <p>₹50,000</p>
+        <button onclick="addToCart('Laptop')">Add to Cart</button>
+    </div>
 
-</div>
+    <div class="card">
+        <img src="https://via.placeholder.com/150">
+        <h3>Headphones</h3>
+        <p>₹2,000</p>
+        <button onclick="addToCart('Headphones')">Add to Cart</button>
+    </div>
 
-<h2>Cart</h2>
-<ul id="cart"></ul>
+</section>
+
+<!-- Cart -->
+<section class="cart">
+    <h2>Cart</h2>
+    <ul id="cart-list"></ul>
+</section>
 
 <script src="script.js"></script>
-
 </body>
 </html>
